@@ -7,29 +7,20 @@ using namespace std;
 autorally::autorally() {
 	cout << "constructor" << endl;
 }
-autorally::autorally(string tp_country, int tp_duration, int tp_price, int tp_lenth, int tp_numOfCity, string tp_qualityOfRoad, int tp_numberOfCult) {
-	country = tp_country;
-	duration = tp_duration;
-	price = tp_price;
-	lenth = tp_lenth;
-	numOfCity = tp_numOfCity;
-	qualityOfRoad = tp_qualityOfRoad;
-	numberOfCult = tp_numberOfCult;
-	cout << "Result\n" << endl;
+autorally::autorally(string provisional_country, int provisional_duration, int provisional_price, int provisional_lenth, int provisional_numberOfCity, string provisional_qualityOfRoad, string provisional_dateOfAutorally) {
+	country = provisional_country;
+	duration = provisional_duration;
+	price = provisional_price;
+	lenth = provisional_lenth;
+	numberOfCity = provisional_numberOfCity;
+	qualityOfRoad = provisional_qualityOfRoad;
+	dateOfAutorally = provisional_dateOfAutorally;
+	cout << "Result:\n" << endl;
 }
 autorally::~autorally() {
 	cout << "destructor" << endl;
 }
-/////////////////////////////PRIVATE///////////////////////////////////
-void autorally::setCountry(string x) {
-	country = x;
-}
-void autorally::setDuration(int x) {
-	duration = x;
-}
-void autorally::setPrice(int x) {
-	price = x;
-}
+
 string autorally::getCountry() {
 	return country;
 }
@@ -39,22 +30,16 @@ int autorally::getDuration() {
 int autorally::getPrice() {
 	return price;
 }
-////////////////////////////PROTECTED//////////////////////////////////
-void autorally::setQualityOfRoad(string x) {
-	qualityOfRoad = x;
-}
-void autorally::setNumOfCity(int x) {
-	numOfCity = x;
-}
+
 string autorally::getQualityOfRoad() {
 	return qualityOfRoad;
 }
-int autorally::getNumOfCity() {
-	return numOfCity;
+int autorally::getNumberOfCity() {
+	return numberOfCity;
 }
-//////////////////////////////PUBLIC//////////////////////////////////
-int autorally::getNumberOfCult() {
-	return numberOfCult;
+
+string autorally::getDateOfAutorally() {
+	return dateOfAutorally;
 }
 int autorally::getLenth() {
 	return lenth;

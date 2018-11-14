@@ -8,25 +8,21 @@ using namespace std;
 class autorally {
 public:
 	autorally();
-	autorally(string, int, int, int, int, string, int);
+	autorally(string, int, int, int, int, string, string);
 	~autorally();
-	void setCountry(string x);
-	void setDuration(int x);
-	void setPrice(int x);
-	void setQualityOfRoad(string x);
-	void setNumOfCity(int x);
 	string getCountry();
 	int getDuration();
 	int getPrice();
 	string getQualityOfRoad();
-	int getNumberOfCult();
+	string getDateOfAutorally();
 	int getLenth();
-	int getNumOfCity();
+	int getNumberOfCity();
+
 	string qualityOfRoad;
-	int numOfCity;
+	int numberOfCity;
 protected:
 	int lenth;
-	int numberOfCult;
+	string dateOfAutorally;
 private:
 	string country;
 	int duration;
